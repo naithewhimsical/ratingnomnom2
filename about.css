@@ -1,0 +1,243 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #faf8f6;
+  color: #3a2a20;
+}
+
+/* NAVBAR ICON STYLE */
+.navbar {
+  display: flex;
+  background-color: #5b1f0f;
+  padding: 6px 16px;
+}
+
+.nav-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;              /* ← jarak ikon & teks */
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links .icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.nav-links .text {
+  font-size: 12px;
+}
+
+/* ================= HERO ================= */
+.about-hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.logo {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  color: #8b3e1f;
+}
+
+.tagline {
+  font-style: italic;
+  color: #9c7c6b;
+  margin-top: 5px;
+}
+
+/* ================= ABOUT TITLE ================= */
+.section-title {
+  text-align: center;
+  margin: 40px 0 60px;
+}
+
+.section-title span {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #8b3e1f;
+  background: white;
+  padding: 12px 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ================= VISI MISI ================= */
+.visi-misi {
+  margin-bottom: 80px;
+}
+
+.sub-title {
+  font-weight: 700;
+  color: #8b3e1f;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.box {
+  background: #8b3e1f;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 1.8;
+  min-height: 180px;
+}
+
+.box ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+/* divider tengah */
+.divider {
+  display: flex;
+  justify-content: center;
+}
+
+.divider::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #8b3e1f;
+}
+
+/* ================= HISTORY ================= */
+.history {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.history-title {
+  letter-spacing: 10px;
+  color: #8b3e1f;
+  margin-bottom: 25px;
+}
+
+.history-box {
+  max-width: 900px;
+  margin: auto;
+  background: #8b3e1f;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ================= TEAM ================= */
+.team {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.team-title {
+  letter-spacing: 8px;
+  color: #8b3e1f;
+  margin-bottom: 30px;
+}
+
+.team-box {
+    max-width: 900px;
+    margin: auto;
+  background: #8b3e1f;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.team-box img {
+  width: 200px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ================= FOOTER ================= */
+/* FOOTER */
+.footer {
+  background-color: #8b3e1f;
+  color: white;
+  padding: 15px 0;
+  margin-top: 50px;
+}
+
+.footer-item {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 20px;
+}
+
+.footer-item span {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .logo {
+    font-size: 36px;
+  }
+
+  .section-title span {
+    font-size: 34px;
+  }
+
+  .divider::before {
+    display: none;
+  }
+
+  .sub-title {
+    margin-top: 25px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .logo {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+  .section-title span {
+    font-size: 28px;
+    padding: 10px 25px;
+  }
+
+  .box {
+    font-size: 13px;
+  }
+
+  .history-title,
+  .team-title {
+    font-size: 16px;
+    letter-spacing: 6px;
+  }
+
+  .team-box img {
+    width: 100%;
+    max-width: 240px;
+    height: 260px;
+  }
+
+  .about-footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
